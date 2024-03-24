@@ -102,7 +102,7 @@ declare type CreateUserParams = {
     value: string | number | null;
   };
   
-  declare type UrlQueryParams = {
+declare type UrlQueryParams = {
     params: string;
     key: string;
     value: string | null;
