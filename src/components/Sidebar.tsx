@@ -56,7 +56,7 @@ const Sidebar = () => {
   </SignedIn>
    <SignedOut>
    <button className='w-full p-[0.8rem] bg-black text-white rounded-full font-semibold hover:bg-slate-800'>
-    <Link href={'/sign-in'}>
+    <Link href='/sign-in'>
 Login    
     </Link>
    </button>
