@@ -19,7 +19,7 @@ const Sidebar = () => {
     
     const  isActive = link.route === pathname;
     return(
-      <li className={`  text-center text-white font-md rounded-full overflow-hidden  hover:bg-[#e67aa0]`}>
+      <li key={link.label} className={`  text-center text-white font-md rounded-full overflow-hidden  hover:bg-[#e67aa0]`}>
         <Link href={link.route} className={` p-[10px] flex items-center gap-2 ${isActive ? 'bg-pink-500  text-slate-400' : 'bg-[#fdd5c8]' } text-slate-500 font-semibold `} >
           <Image src={link.icon} alt="icon" height={30} width={30} className='brightness-75' />
           {link.label}
@@ -41,7 +41,7 @@ const Sidebar = () => {
     
     const  isActive = link.route === pathname;
     return(
-      <li className={` overflow-hidden text-center text-white font-md rounded-full   hover:bg-[#e67aa0] `}>
+      <li key={link.label} className={` overflow-hidden text-center text-white font-md rounded-full   hover:bg-[#e67aa0] `}>
       <Link href={link.route} className={` p-2 flex items-center justify-center gap-2 ${isActive ? 'bg-pink-600 text-slate-400' : 'bg-[#fdd5c8]' } text-slate-500 font-semibold`} >
         <Image src={link.icon} alt="icon" height={30} width={30} className='brightness-75' />
         {link.label}
