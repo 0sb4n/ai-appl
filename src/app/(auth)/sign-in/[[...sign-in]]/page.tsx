@@ -6,5 +6,4 @@ const SignInPage = () => {
    
   
 }
-
-export default SignIn
+export default SignInPage;
