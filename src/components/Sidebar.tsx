@@ -20,8 +20,8 @@ const Sidebar = () => {
     const  isActive = link.route === pathname;
     return(
       <li key={link.label} className={`  text-center text-white font-md rounded-full overflow-hidden  hover:bg-[#e67aa0]`}>
-        <Link href={link.route} className={` p-[10px] flex items-center gap-2 ${isActive ? 'bg-pink-500  text-slate-400' : 'bg-[#fdd5c8]' } text-slate-500 font-semibold `} >
-          <Image src={link.icon} alt="icon" height={30} width={30} className='brightness-75' />
+        <Link href={link.route} className={` p-[10px] flex items-center gap-2 ${isActive ? 'bg-pink-600 text-slate-200' : 'bg-[#fdd5c8] text-slate-600' } font-semibold `} >
+          <Image src={link.icon} alt="icon" height={30} width={30} className='brightness-120' />
           {link.label}
         </Link>
       </li>
@@ -42,15 +42,15 @@ const Sidebar = () => {
     const  isActive = link.route === pathname;
     return(
       <li key={link.label} className={` overflow-hidden text-center text-white font-md rounded-full   hover:bg-[#e67aa0] `}>
-      <Link href={link.route} className={` p-2 flex items-center justify-center gap-2 ${isActive ? 'bg-pink-600 text-slate-400' : 'bg-[#fdd5c8]' } text-slate-500 font-semibold`} >
-        <Image src={link.icon} alt="icon" height={30} width={30} className='brightness-75' />
+      <Link href={link.route} className={` p-2 flex items-center justify-center gap-2 ${isActive ? 'bg-pink-600 text-slate-200' : 'bg-[#fdd5c8] text-slate-500' }  font-semibold`} >
+        <Image src={link.icon} alt="icon" height={30} width={30} className='brightness-120' />
         {link.label}
       </Link>
     </li>
     )
   })}
    <li className='flex justify-center items-center bg-[#fdd5c8] rounded-full cursor-pointer gap-2 p-4 '>
-<UserButton afterSignOutUrl='/' showName />
+<UserButton afterSignOutUrl='/' showName  />
   </li>
   </ul>
   </SignedIn>

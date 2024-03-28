@@ -42,9 +42,9 @@ const MobileBar = () => {
     
     const  isActive = link.route === pathname;
     return(
-      <li key={link.label} className={`bg-[#fdd5c8] w-full  text-center text-white font-md rounded-full  hover:bg-[#e67aa0]`}>
-        <Link href={link.route} className={` p-[10px] flex items-center gap-2 {isActive ? 'bg-purple-700  text-slate-400' : 'bg-purple-500' } text-slate-500 font-semibold `} >
-          <Image src={link.icon} alt="icon" height={30} width={30} className='brightness-75' />
+      <li key={link.label} className={`bg-[#fdd5c8] w-full overflow-hidden flex gap-2 items-center  text-center text-white font-md rounded-full  hover:bg-[#e67aa0]`}>
+        <Link href={link.route} className={`w-full p-[10px] flex items-center gap-2 ${isActive ? 'bg-pink-600  text-slate-200' : 'bg-[#fdd5c8] text-slate-600' }  font-semibold `} >
+          <Image src={link.icon} alt="icon" height={30} width={30} className='brightness-120' />
           {link.label}
         </Link>
       </li>
